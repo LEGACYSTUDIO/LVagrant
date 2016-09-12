@@ -4,14 +4,18 @@
 -	Устанавливаем virtualBox (https://www.virtualbox.org/)
 -	Устанавливаем vagrant (https://www.vagrantup.com/)
 
-Для ускоренной работы с публичной папкой включен NFS
-Для работы NFS под windows выполняем команду vagrant plugin install vagrant-winnfsd
+Для ускоренной работы с публичной папкой включен NFS. Для работы NFS под windows выполняем команду vagrant plugin install vagrant-winnfsd
 
 # Структура каталогов
 
 project_name
-	- vagrant(файлы vagrant)
-	- www(Файлы проекта)
+- vagrant(файлы vagrant)
+- www(Файлы проекта)
+
+```sh
+cd ./project/vagrant
+vagrant up
+```
 
 # Примечание:
 - Почтовый сервер не работает на отправку писем на mail.ru, на почтовые серверы yandex.ru - работает, на остальные не проверялось.
