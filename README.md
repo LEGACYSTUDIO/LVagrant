@@ -12,6 +12,9 @@ project_name
 - vagrant(файлы vagrant)
 - www(Файлы проекта)
 
+В файле ./vagrant/vagrantfile необходимо указать config.vm.box = "name_project" имя проекта.
+
+
 ```sh
 cd ./project/vagrant
 vagrant up
@@ -40,4 +43,4 @@ vagrant destroy - Удаление Виртуальной машины
 
 Web сервер на виртуальной машине работает на 80 порту.
 
-http://www.vagrantbox.es/
+Готовые BOX: http://www.vagrantbox.es/

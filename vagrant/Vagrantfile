@@ -1,13 +1,14 @@
 Vagrant.configure(2) do |config|
-	config.vm.box = "bento/centos-6.7"
-	config.vm.network "private_network", ip: "192.168.50.4"
+	config.vm.box = "name_project" # Имя box должно быть уникально для проекта 
+	config.vm.box_url = "https://github.com/tommy-muehle/puppet-vagrant-boxes/releases/download/1.0.0/centos-6.6-x86_64.box"
 	
+	config.vm.network "private_network", ip: "192.168.50.4"
 	config.vm.network "forwarded_port", guest: 80, host: 80
 	
 	config.vm.synced_folder "../www", "/home/bitrix/www", type: "nfs"
 	
 	config.vm.provider "virtualbox" do |vb|
-		vb.memory = "4096"
+		vb.memory = "1024"
 	end
 	
 	config.ssh.insert_key = false
