@@ -1,13 +1,14 @@
 #!/bin/bash
+echo "Update System."
+yum -y upgrade
 
-#sed -i 's/~\/menu.sh/#~\/menu.sh/' /root/.bash_profile
+wget http://repos.1c-bitrix.ru/yum/bitrix-env.sh
+chmod +x bitrix-env.sh
+sh ./bitrix-env.sh
 
-#yum install -y php-opcache
-#yum install -y php-apc
+sed -i 's/~\/menu.sh/#~\/menu.sh/' /root/.bash_profile
 
-#yum remove -y php-pdo
-#yum install -y php-pdo
-
+echo "bitrix-env.sh"  
 rm -f /etc/php.d/*xdebug.ini*
 
 echo 'zend_extension = xdebug.so
@@ -42,3 +43,7 @@ sendmail_path = sendmail -t -i -f info@legacystudio.ru
 
 echo -e "\e[1;32mRestarting apache service\e[0m"
 service httpd restart
+
+yum install -y gcc make kernel-devel
+#/etc/init.d/vboxadd setup
+sh /opt/VBox*/init/vboxadd setup
