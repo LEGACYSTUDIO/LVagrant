@@ -7,6 +7,10 @@
 ```sh
 vagrant plugin install vagrant-winnfsd
 ```
+Иногда необходимо установить vbguest
+```sh
+vagrant plugin install vagrant-vbguest
+```
 
 # Структура каталогов
 
