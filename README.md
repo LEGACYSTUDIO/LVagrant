@@ -62,5 +62,5 @@ Web сервер на виртуальной машине работает на 
 
 Готовые BOX: http://www.vagrantbox.es/
 
-- CentOS 6.7 https://atlas.hashicorp.com/bento/boxes/centos-6.7/versions/2.2.7/providers/virtualbox.box "bento/centos-6.7"
-- Centos 7.2 https://atlas.hashicorp.com/bento/boxes/centos-7.2/versions/2.2.9/providers/virtualbox.box "bento/centos-7.2" (По умолчанию в Vagrantfile)
+- CentOS 6.7 https://atlas.hashicorp.com/bento/boxes/centos-6.7/versions/2.2.7/providers/virtualbox.box "bento/centos-6.7" (По умолчанию в Vagrantfile)
+- Centos 7.2 https://atlas.hashicorp.com/bento/boxes/centos-7.2/versions/2.2.9/providers/virtualbox.box "bento/centos-7.2" 
